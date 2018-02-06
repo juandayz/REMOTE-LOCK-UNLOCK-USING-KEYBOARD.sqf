@@ -1,6 +1,6 @@
 # REMOTE-LOCK-UNLOCK-USING-KEYBOARD.sqf
 
-***I dont wanna hear any idiot saying: "you stole my code you stole my code" ..."When the stuff happened with my remote vehicle core that Juan used without permission/credits he had it merged...blabla"...***
+***I dont wanna hear any farmer from NewZeland saying: "you stole my code you stole my code" ..."When the stuff happened with my remote vehicle core that Juan used without permission/credits he had it merged...blabla"...***
 
 All codes comes from default fn_selfactions.sqf and default  unlock_veh.sqf   and the original idea and credits goes to @David
 https://epochmod.com/forum/topic/10843-release-remote-key-for-lockingunlocking-vehicles-03/
