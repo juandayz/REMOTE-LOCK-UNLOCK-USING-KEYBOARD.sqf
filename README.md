@@ -150,3 +150,5 @@ B: Find:
 		s_player_lockUnlock_crtl = -1;
 };
 ```
+
+4.Drop remotekey folder into your scripts folder.
