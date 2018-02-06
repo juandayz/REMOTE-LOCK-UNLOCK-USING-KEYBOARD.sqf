@@ -8,7 +8,7 @@ https://epochmod.com/forum/topic/10843-release-remote-key-for-lockingunlocking-v
 If u wanna feel like a genious just be a genious not an idiot blaming others for things you know are not true.
 
 
-WHAT IS DOES?- Allow players to lock unlock vehicles pressing "T" key. Dsnt need all that shit about right clicks.
+WHAT IS DOES?- Allow players to lock unlock vehicles pressing "T" key. Dsnt need  right clicks.
 Remove all default actions from lock unlock with scroll menu and all actions from inside vehicle too.
 
 **INSTALL:**
