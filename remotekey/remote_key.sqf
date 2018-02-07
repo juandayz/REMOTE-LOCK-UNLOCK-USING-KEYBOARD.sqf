@@ -25,7 +25,7 @@ if !(_hasKey or _oldOwner) exitWith {systemchat "<REMOTE_KEY>:YOUR NOT THE OWNER
 //if is locked
 player playActionNow "GesturePoint";
 dayz_actionInProgress = true;
-null = [objNull,_vehicle,rSAY,"carLock",80] call RE;
+//null = [objNull,_vehicle,rSAY,"carLock",80] call RE;
 if(locked _vehicle) then {
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
