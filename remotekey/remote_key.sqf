@@ -2,7 +2,7 @@ private ["_time","_vehicleType","_onLadder","_vehicle","_canDo","_vehicleOwnerID
 _vehicle = cursorTarget;
 _vehicleType = typeOf _vehicle;
 
-if (dayz_actionInProgress) exitWith {"Your remote control is stuked. wait a few seconds" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {"Your remote control is stuck. Wait a few seconds" call dayz_rollingMessages;};
 
 _vehicle = cursorTarget;
 _vehicleType = typeOf _vehicle;
@@ -10,8 +10,8 @@ _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animatio
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
 if !(_vehicle isKindOf "AllVehicles" && {player distance _vehicle < 50}) exitWith {};
-if (!alive _vehicle) exitWith {systemchat "<REMOTE_KEY>:VEHICLE DAMAGED";};
-if !(_vehicleOwnerID != "0" && _canDo) exitWith {systemchat "<REMOTE_KEY>:SOMETHING WRONG WITH YOU OR YOUR VEHICLE";};
+if (!alive _vehicle) exitWith {systemchat "<REMOTE_KEY>:THE VEHICLE IS DAMAGED";};
+if !(_vehicleOwnerID != "0" && _canDo) exitWith {systemchat "<REMOTE_KEY>:SOMETHING IS WRONG WITH YOU OR YOUR VEHICLE";};
 //update by juandayz for free :D
 _totalKeys = call epoch_tempKeys;
 _temp_keys = _totalKeys select 0;
@@ -19,7 +19,7 @@ _temp_keys_names = _totalKeys select 1;
 _hasKey = _vehicleOwnerID in _temp_keys;
 _uid = getPlayerUID player;
 _oldOwner = (_vehicleOwnerID == _uid);
-if !(_hasKey or _oldOwner) exitWith {systemchat "<REMOTE_KEY>:YOUR NOT THE OWNER OF THE VEHICLE OR YOU MISS THE KEY";};
+if !(_hasKey or _oldOwner) exitWith {systemchat "<REMOTE_KEY>:YOU RE NOT THE OWNER OF THIS VEHICLE OR YOU DON T HAVE THE KEY";};
 
 
 //if is locked
