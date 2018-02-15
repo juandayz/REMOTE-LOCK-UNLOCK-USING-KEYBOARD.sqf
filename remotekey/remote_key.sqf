@@ -1,6 +1,4 @@
 private ["_time","_vehicleType","_onLadder","_vehicle","_canDo","_vehicleOwnerID","_totalKeys","_temp_keys","_temp_keys_names","_hasKey","_oldOwner","_uid"];
-_vehicle = cursorTarget;
-_vehicleType = typeOf _vehicle;
 
 if (dayz_actionInProgress) exitWith {"Your remote control is stuck. Wait a few seconds" call dayz_rollingMessages;};
 
@@ -9,7 +7,7 @@ _vehicleType = typeOf _vehicle;
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1; 
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
-if !(_vehicle isKindOf "AllVehicles" && {player distance _vehicle < 50}) exitWith {};
+if !(_vehicle isKindOf "AllVehicles" && {player distance _vehicle < 20}) exitWith {};
 if (!alive _vehicle) exitWith {systemchat "<REMOTE_KEY>:THE VEHICLE IS DAMAGED";};
 if !(_vehicleOwnerID != "0" && _canDo) exitWith {systemchat "<REMOTE_KEY>:SOMETHING IS WRONG WITH YOU OR YOUR VEHICLE";};
 //update by juandayz for free :D
@@ -35,7 +33,6 @@ PVDZE_veh_Lock = [_vehicle,false];
 _time = diag_tickTime;
 
 if (local _vehicle) then {
-//PVDZE_veh_Lock spawn local_lockUnlock;
 PVDZE_veh_Lock call local_lockUnlock;
 } else {
 publicVariable "PVDZE_veh_Lock";
