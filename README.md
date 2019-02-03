@@ -1,11 +1,10 @@
 # REMOTE-LOCK-UNLOCK-USING-KEYBOARD.sqf
 
-***I dont wanna hear any farmer from NewZeland saying: "you stole my code you stole my code" ..."When the stuff happened with my remote vehicle core that Juan used without permission/credits he had it merged...blabla"...***
+PLEASE DONATE: https://github.com/juandayz/REMOTE-LOCK-UNLOCK-USING-KEYBOARD.sqf/blob/master/DONATION.md
+
 
 All codes comes from default fn_selfactions.sqf and default  unlock_veh.sqf   and the original idea and credits goes to @David
 https://epochmod.com/forum/topic/10843-release-remote-key-for-lockingunlocking-vehicles-03/
-
-If u wanna feel like a genious just be a genious not an idiot blaming others for things you know are not true.
 
 
 WHAT IS DOES?- Allow players to lock unlock vehicles pressing "T" key. Dsnt need  right clicks.
